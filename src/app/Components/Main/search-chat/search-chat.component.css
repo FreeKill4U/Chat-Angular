@@ -1,0 +1,34 @@
+input
+{
+  background-color: #efefef;
+  width: 100%;
+  height: 2em;
+  font-size: 16px;
+  border: none;
+  border-radius: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  outline: none;
+}
+
+.container-fluid
+{
+  text-align: left;
+}
+
+.center
+{
+  border: none;
+  background-color: #efefef;
+  font-size: 16px;
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  margin-right: 0.2em;
+}
+
+.center:hover
+{
+  background-color: #e0e0e0;
+}

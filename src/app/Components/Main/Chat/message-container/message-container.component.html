@@ -1,0 +1,20 @@
+<ng-container *ngIf="Message.author == author;else other">
+  <div class="my-container container1 center-container">
+      <div class="date my-date" #date>{{Message.date | date:'d MMM y, H:mm'}}</div>
+      <div class="my-text text on-hover" (mouseenter)="Enter()" (mouseleave)="Leave()">{{Message.text}}</div>
+      <div style="clear: both;"></div>
+  </div>
+  <div style="clear: both;"></div>
+</ng-container>
+<ng-template #other>
+  <p [ngStyle]="{color: Message.colorAuth}" class="author">{{Message.author}}</p>
+  <div class="other-container container1">
+  <div class="other-text text on-hover" (mouseenter)="Enter()" (mouseleave)="Leave()">{{Message.text}}</div>
+  <div class="date other-date" #date>{{Message.date | date:'d MMM y, H:mm'}}</div>
+  <div style="clear: both;"></div>
+  </div>
+  <div style="clear: both;"></div>
+</ng-template>
+
+
+

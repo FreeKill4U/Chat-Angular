@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+.logo
+{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.logo h1
+{
+  font-size: 44px;
+  font-weight: 400;
+  font-family: 'Pattaya', sans-serif;
+}
+.logo img
+{
+  width: 25%;
+}
+
+.btn-form
+{
+  user-select: none;
+  position: relative;
+  height: 50px;
+  width: 250px;
+  margin: 8px 0;
+  border-radius: 3em;
+  color: #fff;
+  border: none;
+  background-color: #3ad192;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  transition: all 250ms ease;
+}
+
+.btn-form:hover
+{
+  background-color: #1fb677;
+
+  transition: all 250ms ease;
+}
+
+.textInput
+{
+  background-color: #eee;
+	border: none;
+	padding: 15px 20px;
+	margin: 8px 0;
+	width: 20em;
+}
+
+.containerPanel
+{
+  height: 100vh;
+  position: relative;
+}
+
+.panel
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #ffffff;
+
+  border-radius: 1em;
+  box-shadow: 0px 0px 18px -1px #bbbbbb;
+}
+
+@media (max-width: 576px) {
+  .panel {
+    height: 665px;
+    width: 350px;
+  }
+}
+@media (min-width: 576px) {
+  .panel {
+    height: 665px;
+    width: 385px;
+  }
+}
+
+@media (min-width: 768px) {
+  .panel {
+    height: 670px;
+    width: 424px;
+  }
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}

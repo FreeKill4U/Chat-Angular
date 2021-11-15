@@ -1,0 +1,10 @@
+.fullsize
+{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: #e0e0e083;
+  z-index: 9000;
+}

@@ -1,0 +1,8 @@
+<div class="center-panel">
+  <div class="containerChat" #commentEl>
+    <div *ngFor="let mess of messArray; let i = index">
+      <app-message-container [Message]="mess" [count]="i+1"></app-message-container>
+    </div>
+  </div>
+  <app-new-message-container></app-new-message-container>
+</div>

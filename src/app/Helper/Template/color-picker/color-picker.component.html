@@ -1,0 +1,15 @@
+<div class="box">
+  <button (click)="Dropdown()" class="color-picker" [ngStyle]="{'border-color': Color}">
+    <i class="icon-brush painter"></i>
+  </button>
+
+  <div #colorBox (clickOutside)="TryDropdown()" *ngIf="dropdown" class="container color">
+    <div class="row">
+      <div class="col-1 p-1" *ngFor="let i of colors">
+        <button (click)="Send(i)" class="icon-box my-0 color-box" [ngStyle]="{'background-color': i}">
+
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+ul
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  height: 86%;
+}
+
+button
+{
+  border: none;
+  border-radius: 0.6em;
+  padding-bottom: 0.6em;
+  padding-top: 0.5em;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+}
+
+button:hover
+{
+  background-color: #eeeeee;
+}
+
+.icon
+{
+  width: 5em;
+  padding: 0;
+}
+
+.chat-name
+{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.chat-last-message
+{
+  font-weight: 400;
+  color: #696969;
+}

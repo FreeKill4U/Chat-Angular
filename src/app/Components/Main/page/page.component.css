@@ -1,0 +1,25 @@
+*
+{
+  background-color: white;
+}
+
+.left-panel
+{
+  height: 100vh;
+  padding: 0em;
+}
+.center-panel
+{
+  height: 100vh;
+  border-left: 1px Solid #e4e4e4;
+  padding: 0;
+}
+
+.right-panel
+{
+  height: 100vh;
+  border-left: 2px Solid #c0c0c0;
+  padding: 0;
+}
+
+

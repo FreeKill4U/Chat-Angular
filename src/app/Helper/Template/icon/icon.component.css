@@ -1,0 +1,13 @@
+.icon-box
+{
+  background-color: #3ad192;
+  text-align: center;
+  padding: 16%;
+  border-radius: 100%;
+}
+
+.icon
+{
+  width: 100%;
+  display: block;
+}

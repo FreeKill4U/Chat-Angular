@@ -1,0 +1,41 @@
+header
+{
+  height: 6.5vh;
+  text-align: left;
+
+  border-bottom: 1px solid #efefef;
+
+  -webkit-box-shadow: 0px 0 0.3em 0 #b8b8b8;
+  box-shadow: 0px 0 0.3em 0 #b8b8b8;
+}
+
+.center-container
+{
+  padding: 0;
+}
+
+.square
+{
+  width: 4.1em;
+}
+
+.Title
+{
+  font-weight: 500;
+  margin-left: 0.4em;
+}
+
+.Info
+{
+  font-size: 12px;
+}
+
+.row
+{
+  height: 100%;
+}
+
+.center
+{
+  width: 100%;
+}

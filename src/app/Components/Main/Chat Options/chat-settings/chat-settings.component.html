@@ -1,0 +1,37 @@
+<button class="dropdown" (click)="Dropdown()">
+  Dostasuj czat
+
+  <i *ngIf="!dropdown" class="icon-down-open arrow"></i>
+  <i *ngIf="dropdown" class="icon-up-open arrow"></i>
+  <div style="clear: both;"></div>
+</button>
+
+<ul>
+  <ng-container *ngIf="dropdown" class="container">
+    <div class="row">
+      <div class="col-2">
+        <app-color-picker [Color]="Chat.color" (SetColor)="SetColor($event)"></app-color-picker>
+      </div>
+      <div class="col-9 offset-1">
+        <div class="center-container">
+          <div class="center">
+            <h3 class="">Kolor</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2">
+        <app-choose-icon-small [MainColor]="Chat.color" (SetIcon)="SetIcon($event)" [MainIcon]="Chat.icon"></app-choose-icon-small>
+      </div>
+      <div class="col-9 offset-1">
+        <div class="center-container">
+          <div class="center">
+            <h3 class="">Ikona</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</ul>

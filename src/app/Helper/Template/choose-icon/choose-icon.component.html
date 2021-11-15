@@ -1,0 +1,33 @@
+<div class="box">
+  <div style="width: 70%;float:left;">
+    <button (click)="Dropdown()" class="icon-box" [ngStyle]="{'background-color': MainColor}">
+      <img src="../../../../assets/Chat/icon/{{MainIcon}}.svg" alt="Icon" class="icon">
+    </button>
+  </div>
+  <button (click)="Dropdown2()" class="color-picker" [ngStyle]="{'border-color': MainColor}">
+    <i class="icon-brush painter"></i>
+  </button>
+
+  <div style="clear: both;"></div>
+
+
+  <div (clickOutside)="TryDropdown()" *ngIf="dropdown" class="container  icons">
+    <div class="row">
+      <div class="col-2" *ngFor="let i of icons">
+        <button (click)="ChangeMainIcon(i)" class="icon-box my-2">
+          <img src="../../../../assets/Chat/icon/{{i}}.svg" alt="Icon" class="icon">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div (clickOutside)="TryDropdown2()" *ngIf="dropdown2" class="container color">
+    <div class="row">
+      <div class="col-1 p-1" *ngFor="let i of colors">
+        <button class="icon-box my-0 color-box" (click)="ChangeMainColor(i)" [ngStyle]="{'background-color': i}">
+
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

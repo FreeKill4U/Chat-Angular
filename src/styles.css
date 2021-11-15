@@ -1,0 +1,128 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "assets/Fontello/css/fontello.css";
+
+html, body
+{
+  height: 100%;
+
+  text-align: center;
+
+  color: #1d1f23;
+  overflow: hidden;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.background
+{
+  background-color: #f2f2f2;
+}
+
+.btn-form
+{
+  user-select: none;
+  position: relative;
+  height: 50px;
+  width: 250px;
+  margin: 8px 0;
+  border-radius: 3em;
+  color: #fff;
+  border: none;
+  background-color: #3ad192;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  transition: all 250ms ease;
+}
+
+.btn-form:hover
+{
+  background-color: #1fb677;
+
+  transition: all 250ms ease;
+}
+
+.info
+{
+  color: #e23237;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #3ad192;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #3ad192 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center-container
+{
+  position: relative;
+  height: 100%;
+}
+
+.center
+{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+i::before
+{
+  margin: 0!important;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+ }
+ ::-webkit-scrollbar-thumb {
+  background: radial-gradient(circle, #c1c1c1 14%,#c1c1c1 64%);
+  border-radius: 15px;
+  box-shadow: inset 30px 7px 30px fff;
+ }
+ ::-webkit-scrollbar-thumb:hover{
+  background: radial-gradient(circle, #3ad192 14%,#3ad192 64%);
+ }
+ ::-webkit-scrollbar-track{
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: inset 7px 30px 12px fff;
+ }
+

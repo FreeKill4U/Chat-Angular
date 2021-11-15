@@ -1,0 +1,21 @@
+<button class="dropdown" (click)="Dropdown()">
+  Użytkownicy
+
+  <i *ngIf="!dropdown" class="icon-down-open arrow"></i>
+  <i *ngIf="dropdown" class="icon-up-open arrow"></i>
+  <div style="clear: both;"></div>
+</button>
+
+<ul>
+  <ng-container *ngIf="dropdown">
+    <li *ngFor="let user of Users" [ngStyle]="{color: user.color}">
+      <div class="icon"><app-icon [Icon]="user.icon" [Color]="user.iconColor"></app-icon></div>
+      <div class="center-container user">
+        <p class="center">{{user.nick}}</p>
+      </div>
+      <div style="clear: both;"></div>
+    </li>
+
+    <app-add-user></app-add-user>
+  </ng-container>
+</ul>

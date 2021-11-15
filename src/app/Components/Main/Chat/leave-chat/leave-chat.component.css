@@ -1,0 +1,16 @@
+button
+{
+  color: red;
+  border: none;
+  height: 2.4rem;
+  border-radius: 0.4em;
+  text-align: center;
+  font-size: 18px;
+
+  transition: all 200ms ease-in-out;
+}
+
+button:hover
+{
+  background-color: #e0e0e0;
+}

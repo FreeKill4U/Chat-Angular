@@ -1,0 +1,23 @@
+
+<app-search-chat (search)="Search($event)"></app-search-chat>
+
+<ul>
+  <li *ngFor="let chat of ChatsShow; let i = index" >
+    <button (click)="ChangeChat(chat.id, i)" class="chat">
+      <div class="container-fluid px-2">
+        <div class="row p-0">
+          <div class="col-3 p-0">
+            <div class="icon">
+              <app-icon [Icon]="chat.icon" [Color]="chat.color"></app-icon>
+            </div>
+          </div>
+          <div class="col-9 pl-3 pt-2">
+            <div class="chat-name">{{chat.name}}</div>
+            <div class="chat-last-message">{{chat.lastMessage | messegeCuter:30}}</div>
+          </div>
+        </div>
+      </div>
+    </button>
+  </li>
+</ul>
+

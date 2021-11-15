@@ -1,0 +1,86 @@
+.container1
+{
+  text-align: left;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.other-container
+{
+  padding: 1.5em;
+  padding-top: 0;
+  float: left;
+}
+
+.my-container
+{
+  padding: 0.3em;
+  padding-right: 1.5em;
+  float: right;
+}
+
+.text
+{
+  width: fit-content;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 2em;
+  max-width: 40%;
+  word-wrap: break-word;
+}
+
+.other-text
+{
+  background-color: #e4e6eb;
+  float: left;
+}
+
+.my-text
+{
+  float: right;
+  background-color: #3ad192;
+}
+
+.date
+{
+  border-radius: 1em;
+  padding: 1%;
+  color: white;
+  background-color: black;
+  opacity: 0.6;
+  font-size: 11px;
+  margin: 0;
+  margin-left: 0.8em;
+  opacity:  0;
+
+  transition: all  150ms ease-in-out 1s;
+}
+
+.my-date
+{
+  margin-left: auto;
+}
+
+.other-date
+{
+  float: left;
+}
+
+
+.author
+{
+  font-size: 11px;
+  margin-bottom: 0;
+  margin-left: 3em;
+  text-align: left;
+}
+
+.center-container
+{
+  height: 100%;
+  vertical-align: middle;
+}

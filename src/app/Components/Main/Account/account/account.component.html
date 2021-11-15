@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+      <div class="icon-box">
+        <app-icon [Color]="User.iconColor" [Icon]="User.icon"></app-icon>
+      </div>
+    </div>
+    <div class="col-3">
+        <div class="center-container">
+          <div class="center">
+            <h2 class="p-0 m-0" [ngStyle]="{color: Color}">{{Nick}}</h2>
+          </div>
+        </div>
+    </div>
+    <div class="col-6 p-0 text-right">
+      <div class="center-container">
+        <div class="center">
+          <app-new-chat></app-new-chat>
+          <app-settings></app-settings>
+          <app-logout></app-logout>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

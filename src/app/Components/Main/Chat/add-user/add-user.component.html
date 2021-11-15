@@ -1,0 +1,20 @@
+
+<div class="container-fluid">
+  <div class="row" (clickOutside)="OutFocus()">
+    <div #inputBox class="col-3 center-container">
+      <input class="userNick-off center" #search #userNick placeholder="{{placeholder}}" (focus)="OnFocus()">
+    </div>
+    <div  *ngIf="switcher" class="col-9 center-container ">
+      <p class="center">Dodaj użytkownika</p>
+    </div>
+    <div  *ngIf="!switcher" class="col-3 center-container">
+      <button class="center add-button" (click)="AddUser(userNick.value)"><i class="demo-icon icon-user-plus"></i></button>
+    </div>
+
+    <div class="col-12">
+      <p class="info">{{info}}</p>
+    </div>
+  </div>
+</div>
+
+

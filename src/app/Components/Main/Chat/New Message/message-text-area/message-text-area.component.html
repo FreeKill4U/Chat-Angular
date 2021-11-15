@@ -1,0 +1,16 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-11">
+      <div class="center-container">
+        <input #message [(ngModel)]="clear" class="text center" placeholder="Napisz coś od siebie..."
+        (keypress)="Enter($event, message.value)">
+      </div>
+    </div>
+    <div class="col-1">
+      <div class="center-container">
+        <button class="center send" (click)="Send(message.value)"><i class="demo-icon icon-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+</div>

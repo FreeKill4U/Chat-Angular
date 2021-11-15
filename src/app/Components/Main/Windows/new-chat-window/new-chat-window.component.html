@@ -1,0 +1,18 @@
+<div (clickOutside)="Exit()" class="container">
+
+  <h2>Stwórz nowy czat</h2>
+
+  <div class="row">
+    <div class="col-6 offset-3">
+      <app-choose-icon></app-choose-icon>
+    </div>
+  </div>
+
+
+  <label>
+    <input #name class="textInput" formControlName="login" type="login" placeholder="Nazwa czatu" />
+  </label>
+
+  <button (click)="CreateChat(name.value)" type="submit" class="btn-form">Stwórz</button>
+
+</div>

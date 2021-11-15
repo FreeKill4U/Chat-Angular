@@ -1,0 +1,31 @@
+<div class="background">
+  <div class="containerPanel">
+    <div class="panel">
+
+      <div class="logo">
+        <h1>Ligęza</h1>
+        <img src="../../../assets/logo.png" alt="Logo">
+      </div>
+
+      <form [formGroup]="loginForm" (ngSubmit)="Login()">
+
+        <label>
+          <input class="textInput" formControlName="login" type="login" placeholder="Nick" />
+        </label>
+        <br/>
+
+        <label>
+          <input class="textInput" formControlName="password" type="password" placeholder="Hasło" />
+        </label>
+        <p class="info">{{info}}</p>
+        <br/>
+
+        <div>
+        <button type="submit" class="btn-form">Zaloguj</button>
+        </div>
+        <p>Nie masz jeszcze konta? <a href="" routerLink="/RegisterPanel" routerLinkActive="active">Zarejestruj się!</a></p>
+        <div class="lds-ring" [hidden]="!loading"><div></div><div></div><div></div><div></div></div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div (clickOutside)="Exit()" class="container">
+
+  <h2>Ustawienia konta</h2>
+
+  <div class="row">
+    <div class="col-6 offset-3">
+      <app-choose-icon #icon [MainColor]="User.iconColor" [MainIcon]="User.icon"></app-choose-icon>
+    </div>
+  </div>
+
+
+
+
+  <div class="row center-container">
+    <div class="col-3 center">
+      <app-color-picker [Color]="NickColor" (SetColor)="SetColor($event)" #colorComponent></app-color-picker>
+    </div>
+
+    <div class="col-6 nick-box">
+      <label>
+        <input #name class="nick" type="login" value="{{Nick}}" [ngStyle]="{'color': NickColor}"/>
+      </label>
+    </div>
+  </div>
+
+
+
+
+  <button (click)="Send(name.value)" class="btn-form">Zapisz</button>
+
+
+</div>

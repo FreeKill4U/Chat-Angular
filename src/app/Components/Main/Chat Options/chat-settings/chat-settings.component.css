@@ -1,0 +1,29 @@
+.dropdown
+{
+  width: 95%;
+  padding: 0.5em;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+  text-align: left;
+  border-radius: 0.4em;
+
+  transition: all 50ms ease-in-out;
+}
+
+.dropdown:hover
+{
+  background-color: #eeeeee;
+}
+
+.arrow
+{
+  float: right;
+  font-size: 30;
+}
+
+h3
+{
+  margin: 0;
+}
