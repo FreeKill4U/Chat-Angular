@@ -32,7 +32,6 @@ export class ChatsListComponent implements OnInit
       {
         this.Chats = r;
         this.Search('');
-        console.log(this.Chats[0].lastMessage);
       });
   }
 

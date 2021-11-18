@@ -21,8 +21,9 @@ export class UserService
 {
   public static IsLoggin = false;
   public static User: IUserDto;
+  public static Id = "http://217.96.199.178:4000/";
 
-  root = 'http://217.96.199.163:4000/users/';
+  root = UserService.Id+'users/';
 
   constructor(private http: HttpClient, private router: Router, private tokenService: TokenService)
   {

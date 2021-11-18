@@ -9,7 +9,7 @@ export class MessegeCuterPipe implements PipeTransform {
     let result = value;
     if(value != null)
     {
-      let result = value.slice(0, border);
+      result = value.slice(0, border);
       if(value.length >= border)
         result+='...';
     }

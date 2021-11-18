@@ -19,7 +19,7 @@ export class ChatService
   public static chatId: number;
   public static chat: ChatInfoDto;
 
-  root = 'http://217.96.199.163:4000/Chat/';
+  root = UserService.Id+'Chat/';
   constructor(private http: HttpClient) { }
 
   GetChatId()
@@ -122,7 +122,7 @@ export class ChatService
   GetUsers(): Observable<Array<IUserInfoDto>>
   {
     let result = this.http.get<Array<IUserInfoDto>>(this.root+'GetUsers/'+ChatService.chatId)
-    
+
     return result;
   }
 

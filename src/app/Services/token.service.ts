@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class TokenService {
 
-  root = 'http://217.96.199.163:4000/users/';
+  root = UserService.Id+'users/';
 
   public static tokenChecked = false;
 
@@ -35,7 +35,7 @@ export class TokenService {
     .subscribe(
       r =>
       {
-        this.http.get<IUserDto>("http://217.96.199.163:4000/users")
+        this.http.get<IUserDto>(UserService.Id+"users")
         .subscribe(
           r =>
           {

@@ -14,7 +14,7 @@ import { ChatService } from './chat.service';
 export class SignalrService
 {
   connection: signalR.HubConnection;
-  root = 'http://217.96.199.163:4000/notify';
+  root = UserService.Id+'notify';
 
   constructor(private tokenService: TokenService){}
 
