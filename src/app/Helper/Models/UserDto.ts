@@ -19,3 +19,4 @@ export class UserDto implements IUserDto
   nick: string;
   token: string;
 }
+//Komentarz
